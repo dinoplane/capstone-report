@@ -1,0 +1,72 @@
+\begin{thebibliography}{10}
+
+\bibitem{openglconcepts}
+``Portal:opengl concepts.'' Available at \url{https://www.khronos.org/opengl/wiki/Portal:OpenGL_Concepts}, Sep 2017.
+
+\bibitem{Peddie_2022}
+J.~Peddie, {\em The history of the GPU - eras and environment}.
+\newblock Springer International Publishing Springer, 2022.
+
+\bibitem{quake}
+``Quake map format - quake wiki.'' Wiki available at \url{https://quakewiki.org/wiki/Quake_map_format}.
+
+\bibitem{StephanoDSA}
+J.~Stephano, ``Direct state access (dsa).'' Available at \url{https://ktstephano.github.io/rendering/opengl/dsa}.
+
+\bibitem{Vries_2014}
+J.~d. Vries, ``Instancing.'' Available at \url{https://learnopengl.com/Advanced-OpenGL/Instancing}, Jun 2014.
+
+\bibitem{GLTF}
+T.~K. D. F.~W. Group, ``Gltf 2.0 specification.'' Available at \url{https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html}, Oct 2021.
+
+\bibitem{baraff1998large}
+D.~Baraff and A.~Witkin, {\em Large Steps in Cloth Simulation}.
+\newblock New York, NY, USA: Association for Computing Machinery, 1~ed., 1998.
+
+\bibitem{Grinspun2003discrete}
+E.~Grinspun, A.~N. Hirani, M.~Desbrun, and P.~Schr\"{o}der, ``Discrete shells,'' in {\em Proceedings of the 2003 ACM SIGGRAPH/Eurographics Symposium on Computer Animation}, SCA '03, (Goslar, DEU), p.~62–67, Eurographics Association, 2003.
+
+\bibitem{reynolds1987flocks}
+C.~W. Reynolds, ``Flocks, herds and schools: A distributed behavioral model,'' {\em SIGGRAPH Comput. Graph.}, vol.~21, p.~25–34, Aug. 1987.
+
+\bibitem{stam1999stable}
+J.~Stam, ``Stable fluids,'' in {\em Proceedings of the 26th Annual Conference on Computer Graphics and Interactive Techniques}, SIGGRAPH '99, (USA), p.~121–128, ACM Press/Addison-Wesley Publishing Co., 1999.
+
+\bibitem{eigen_library}
+G.~Guennebaud, B.~Jacob, {\em et~al.}, {\em Eigen: A C++ template library for linear algebra}.
+\newblock Eigen Contributors, 2024.
+\newblock Accessed: 2024-11-20.
+
+\bibitem{Pasadakis2023}
+D.~Pasadakis, M.~Bollhöfer, and O.~Schenk, ``Sparse quadratic approximation for graph learning,'' {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~45, no.~9, pp.~11256--11269, 2023.
+
+\bibitem{EFTEKHARI2021101389}
+A.~Eftekhari, D.~Pasadakis, M.~Bollhöfer, S.~Scheidegger, and O.~Schenk, ``Block-enhanced precision matrix estimation for large-scale datasets,'' {\em Journal of Computational Science}, vol.~53, p.~101389, 2021.
+
+\bibitem{gaedkemerzhäuser2022}
+L.~Gaedke-Merzhäuser, J.~van Niekerk, O.~Schenk, and H.~Rue, ``Parallelized integrated nested laplace approximations for fast bayesian inference,'' 2022.
+
+\bibitem{opengl_documentation}
+{Khronos Group}, {\em OpenGL Documentation}.
+\newblock Khronos Group.
+\newblock Accessed: 2024-11-20.
+
+\bibitem{bolz2003sparse}
+J.~Bolz, I.~Farmer, E.~Grinspun, and P.~Schr\"{o}der, ``Sparse matrix solvers on the gpu: conjugate gradients and multigrid,'' {\em ACM Trans. Graph.}, vol.~22, p.~917–924, July 2003.
+
+\bibitem{caruth2019}
+C.~Caruth, ``There are no zero-cost abstractions.'' CPPCon 2019, 2019.
+
+\bibitem{Tamstorf2013discrete}
+R.~Tamstorf and E.~Grinspun, ``Discrete bending forces and their jacobians,'' {\em Graph. Models}, vol.~75, p.~362–370, Nov. 2013.
+
+\bibitem{Vulkan2024}
+{The Khronos Vulkan Working Group}, ``Vulkan 1.4.303 - a specification.'' Available at \url{https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html}, 2024.
+
+\bibitem{Horwitz_2018}
+J.~Horwitz, ``Apple defends end of opengl as mac game developers threaten to leave | venturebeat.'' Available at \url{https://venturebeat.com/games/apple-defends-end-of-opengl-as-mac-game-developers-threaten-to-leave/}, Jun 2018.
+
+\bibitem{jawedlimdiscrete}
+S.~MK~Jawed, Lim, ``Discrete simulation of slender structures,'' 2023.
+
+\end{thebibliography}

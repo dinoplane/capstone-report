@@ -1,0 +1,336 @@
+@inproceedings{provot1995deformation,
+  title  = {Deformation constraints in a mass-spring model to describe rigid cloth behaviour},
+  author = {Provot, Xavier and others},
+  year   = {1995}
+}
+
+@article{weil1986synthesis,
+  title     = {The synthesis of cloth objects},
+  author    = {Weil, Jerry},
+  journal   = {ACM Siggraph Computer Graphics},
+  volume    = {20},
+  number    = {4},
+  pages     = {49--54},
+  year      = {1986},
+  publisher = {ACM New York, NY, USA}
+}
+
+@inbook{baraff1998large,
+  author    = {Baraff, David and Witkin, Andrew},
+  title     = {Large Steps in Cloth Simulation},
+  year      = {1998},
+  isbn      = {9798400708978},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  edition   = {1},
+  url       = {https://doi.org/10.1145/3596711.3596792},
+  abstract  = {The bottle-neck in most cloth simulation systems is that time steps must be small to avoid numerical instability. This paper describes a cloth simulation system that can stably take large time steps. The simulation systemcouples a new technique for enforcing constraints on individual cloth particles with an implicit integration method. The simulator models cloth as a triangular mesh, with internal cloth forces derived using a simple continuum formulation that supports modeling operations such as local anisotropic stretch or compression; a unified treatment of damping forces is included as well. The implicit integration method generates a large, unbanded sparse linear system at each time step which is solved using a modified conjugate gradient method that simultaneously enforces particles' constraints. The constraints are always maintained exactly, independent of the number of conjugate gradient iterations, which is typically small. The resulting simulation system is significantly faster than previous accounts of cloth simulation systems in the literature.},
+  booktitle = {Seminal Graphics Papers: Pushing the Boundaries, Volume 2},
+  articleno = {80},
+  numpages  = {12}
+}
+
+@incollection{oh2018hierarchical,
+  title     = {Hierarchical cloth simulation using deep neural networks},
+  author    = {Oh, Young Jin and Lee, Tae Min and Lee, In-Kwon},
+  booktitle = {Proceedings of Computer Graphics International 2018},
+  pages     = {139--146},
+  year      = {2018},
+  publisher = {Association for Computing Machinery}
+}
+
+@article{bertiche2022neural,
+  author     = {Bertiche, Hugo and Madadi, Meysam and Escalera, Sergio},
+  title      = {Neural Cloth Simulation},
+  year       = {2022},
+  issue_date = {December 2022},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {41},
+  number     = {6},
+  issn       = {0730-0301},
+  url        = {https://doi.org/10.1145/3550454.3555491},
+  doi        = {10.1145/3550454.3555491},
+  abstract   = {We present a general framework for the garment animation problem through unsupervised deep learning inspired in physically based simulation. Existing trends in the literature already explore this possibility. Nonetheless, these approaches do not handle cloth dynamics. Here, we propose the first methodology able to learn realistic cloth dynamics unsupervisedly, and henceforth, a general formulation for neural cloth simulation. The key to achieve this is to adapt an existing optimization scheme for motion from simulation based methodologies to deep learning. Then, analyzing the nature of the problem, we devise an architecture able to automatically disentangle static and dynamic cloth subspaces by design. We will show how this improves model performance. Additionally, this opens the possibility of a novel motion augmentation technique that greatly improves generalization. Finally, we show it also allows to control the level of motion in the predictions. This is a useful, never seen before, tool for artists. We provide of detailed analysis of the problem to establish the bases of neural cloth simulation and guide future research into the specifics of this domain.},
+  journal    = {ACM Trans. Graph.},
+  month      = nov,
+  articleno  = {220},
+  numpages   = {14},
+  keywords   = {cloth, deep learning, disentangle, dynamics, neural network, simulation, unsupervised}
+}
+
+@article{terzopoulos1987elastically,
+  author     = {Terzopoulos, Demetri and Platt, John and Barr, Alan and Fleischer, Kurt},
+  title      = {Elastically deformable models},
+  year       = {1987},
+  issue_date = {July 1987},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {21},
+  number     = {4},
+  issn       = {0097-8930},
+  url        = {https://doi.org/10.1145/37402.37427},
+  doi        = {10.1145/37402.37427},
+  abstract   = {The theory of elasticity describes deformable materials such as rubber, cloth, paper, and flexible metals. We employ elasticity theory to construct differential equations that model the behavior of non-rigid curves, surfaces, and solids as a function of time. Elastically deformable models are active: they respond in a natural way to applied forces, constraints, ambient media, and impenetrable obstacles. The models are fundamentally dynamic and realistic animation is created by numerically solving their underlying differential equations. Thus, the description of shape and the description of motion are unified.},
+  journal    = {SIGGRAPH Comput. Graph.},
+  month      = aug,
+  pages      = {205–214},
+  numpages   = {10}
+}
+
+@article{Tamstorf2013discrete,
+  author     = {Tamstorf, Rasmus and Grinspun, Eitan},
+  title      = {Discrete bending forces and their Jacobians},
+  year       = {2013},
+  issue_date = {November, 2013},
+  publisher  = {Academic Press Professional, Inc.},
+  address    = {USA},
+  volume     = {75},
+  number     = {6},
+  issn       = {1524-0703},
+  url        = {https://doi.org/10.1016/j.gmod.2013.07.001},
+  doi        = {10.1016/j.gmod.2013.07.001},
+  abstract   = {Computation of bending forces on triangle meshes is required for numerous simulation and geometry processing applications. In particular it is a key component in cloth simulation. A common quantity in many bending models is the hinge angle between two adjacent triangles. This angle is straightforward to compute, and its gradient with respect to vertex positions (required for the forces) is easily found in the literature. However, the Hessian of the bend angle, which is required to compute the associated force Jacobians is not documented in the literature. Force Jacobians are required for efficient numerics (e.g., implicit time stepping, Newton-based energy minimization) and are thus highly desirable. Readily available computations of the force Jacobian, such as those produced by symbolic algebra systems, or by autodifferentiation codes, are expensive to compute and therefore less useful. We present compact, easily reproducible, closed form expressions for the Hessian of the bend angle. Compared to automatic differentiation, we measure up to 7x speedup for the evaluation of the bending forces and their Jacobians.},
+  journal    = {Graph. Models},
+  month      = nov,
+  pages      = {362–370},
+  numpages   = {9},
+  keywords   = {Bending force Jacobians, Dihedral angle, Discrete shells, Hinge angle Hessian}
+}
+
+@inproceedings{Grinspun2003discrete,
+  author    = {Grinspun, Eitan and Hirani, Anil N. and Desbrun, Mathieu and Schr\"{o}der, Peter},
+  title     = {Discrete shells},
+  year      = {2003},
+  isbn      = {1581136595},
+  publisher = {Eurographics Association},
+  address   = {Goslar, DEU},
+  abstract  = {In this paper we introduce a discrete shell model describing the behavior of thin flexible structures, such as hats, leaves, and aluminum cans, which are characterized by a curved undeformed configuration. Previously such models required complex continuum mechanics formulations and correspondingly complex algorithms. We show that a simple shell model can be derived geometrically for triangle meshes and implemented quickly by modifying a standard cloth simulator. Our technique convincingly simulates a variety of curved objects with materials ranging from paper to metal, as we demonstrate with several examples including a comparison of a real and simulated falling hat.},
+  booktitle = {Proceedings of the 2003 ACM SIGGRAPH/Eurographics Symposium on Computer Animation},
+  pages     = {62–67},
+  numpages  = {6},
+  location  = {San Diego, California},
+  series    = {SCA '03}
+}
+
+@article{bolz2003sparse,
+  author     = {Bolz, Jeff and Farmer, Ian and Grinspun, Eitan and Schr\"{o}der, Peter},
+  title      = {Sparse matrix solvers on the GPU: conjugate gradients and multigrid},
+  year       = {2003},
+  issue_date = {July 2003},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {22},
+  number     = {3},
+  issn       = {0730-0301},
+  url        = {https://doi.org/10.1145/882262.882364},
+  doi        = {10.1145/882262.882364},
+  abstract   = {Many computer graphics applications require high-intensity numerical simulation. We show that such computations can be performed efficiently on the GPU, which we regard as a full function streaming processor with high floating-point performance. We implemented two basic, broadly useful, computational kernels: a sparse matrix conjugate gradient solver and a regular-grid multigrid solver. Real time applications ranging from mesh smoothing and parameterization to fluid solvers and solid mechanics can greatly benefit from these, evidence our example applications of geometric flow and fluid simulation running on NVIDIA's GeForce FX.},
+  journal    = {ACM Trans. Graph.},
+  month      = jul,
+  pages      = {917–924},
+  numpages   = {8},
+  keywords   = {GPU computing, Navier-Stokes, conjugate gradient, fluid simulation, mesh smoothing, multigrid, numerical simulation}
+}
+
+@misc{Fisher,
+  title   = {Matt's webcorner},
+  url     = {https://graphics.stanford.edu/~mdfisher/cloth.html},
+  journal = {Matt’s Webcorner - Cloth},
+  author  = {Fisher, Matthew},
+  year    = {2014},
+  note    = {Available at {https://graphics.stanford.edu/~mdfisher/cloth.html}}
+}
+
+@article{SCHENK200169,
+  title    = {PARDISO: a high-performance serial and parallel sparse linear solver in semiconductor device simulation},
+  journal  = {Future Generation Computer Systems},
+  volume   = {18},
+  number   = {1},
+  pages    = {69-78},
+  year     = {2001},
+  note     = {I. High Performance Numerical Methods and Applications. II. Performance Data Mining: Automated Diagnosis, Adaption, and Optimization},
+  issn     = {0167-739X},
+  doi      = {https://doi.org/10.1016/S0167-739X(00)00076-5},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0167739X00000765},
+  author   = {Olaf Schenk and Klaus Gärtner and Wolfgang Fichtner and Andreas Stricker},
+  keywords = {Parallel sparse  factorization, Pipelining parallelism, Semiconductor device simulation},
+  abstract = {The package PARDISO is a high-performance, robust and easy to use software for solving large sparse symmetric or structurally symmetric linear systems of equations on shared memory multiprocessors. PARDISO uses a combination of left-and right-looking Level-3 BLAS supernode techniques to exploit pipelining parallelism. It delivers up to 960Mflop/s on COMPAQ Alpha ES40 (667MHz) for irregular problems and sparse matrix factorization has been clocked up at a speedup of 7 on an 8-node SGI Origin 2000. The paper gives an overview of the algorithm, performance results and the integration of the solver into complex industrial simulation tools. Finally, an example is discussed inherently (due to the design goal) producing linear systems close to singularity.}
+}
+
+@article{jawedlimdiscrete,
+  author = {MK Jawed, Lim, Sangmin},
+  title  = {Discrete Simulation of Slender Structures},
+  year   = {2023}
+}
+
+@article{Pasadakis2023,
+  author   = {Pasadakis, Dimosthenis and Bollhöfer, Matthias and Schenk, Olaf},
+  journal  = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title    = {Sparse Quadratic Approximation for Graph Learning},
+  year     = {2023},
+  volume   = {45},
+  number   = {9},
+  pages    = {11256-11269},
+  keywords = {Covariance matrices;Sparse matrices;Optimization;Laplace equations;Maximum likelihood estimation;Minimization;Correlation;  $M$   M     -matrices;  $\ell _{1}$    ℓ 1      -regularization;Gaussian Markov random fields;partial correlations;precision matrix estimation;sign constraints},
+  doi      = {10.1109/TPAMI.2023.3263969}
+}
+
+@article{EFTEKHARI2021101389,
+  title    = {Block-enhanced precision matrix estimation for large-scale datasets},
+  journal  = {Journal of Computational Science},
+  volume   = {53},
+  pages    = {101389},
+  year     = {2021},
+  issn     = {1877-7503},
+  doi      = {https://doi.org/10.1016/j.jocs.2021.101389},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1877750321000776},
+  author   = {Aryan Eftekhari and Dimosthenis Pasadakis and Matthias Bollhöfer and Simon Scheidegger and Olaf Schenk},
+  keywords = {Covariance matrices, Graphical model, Optimization, Gaussian Markov random field, Machine learning application},
+  abstract = {The ℓ1-regularized Gaussian maximum likelihood method is a common approach for sparse precision matrix estimation, but one that poses a computational challenge for high-dimensional datasets. We present a novel ℓ1-regularized maximum likelihood method for performant large-scale sparse precision matrix estimation utilizing the block structures in the underlying computations. We identify the computational bottlenecks and contribute a block coordinate descent update as well as a block approximate matrix inversion routine, which is then parallelized using a shared-memory scheme. We demonstrate the effectiveness, accuracy, and performance of these algorithms. Our numerical examples and comparative results with various modern open-source packages reveal that these precision matrix estimation methods can accelerate the computation of covariance matrices by two to three orders of magnitude, while keeping memory requirements modest. Furthermore, we conduct large-scale case studies for applications from finance and medicine with several thousand random variables to demonstrate applicability for real-world datasets.}
+}
+
+@misc{gaedkemerzhäuser2022,
+  title         = {Parallelized integrated nested Laplace approximations for fast Bayesian inference},
+  author        = {Lisa Gaedke-Merzhäuser and Janet van Niekerk and Olaf Schenk and Håvard Rue},
+  year          = {2022},
+  eprint        = {2204.04678},
+  archiveprefix = {arXiv},
+  primaryclass  = {stat.CO},
+  url           = {https://arxiv.org/abs/2204.04678}
+}
+
+@manual{opengl_documentation,
+  title        = {OpenGL Documentation},
+  author       = {{Khronos Group}},
+  organization = {Khronos Group},
+  note         = {Accessed: 2024-11-20},
+  url          = {https://www.opengl.org/documentation}
+}
+
+@unpublished{caruth2019,
+  title        = {There Are No Zero-cost Abstractions},
+  author       = {Chandler Caruth},
+  year         = {2019},
+  note         = {CPPCon 2019},
+  howpublished = {Available at \url{https://www.youtube.com/watch?v=rHIkrotSwcc}}
+}
+
+@manual{eigen_library,
+  title        = {Eigen: A C++ template library for linear algebra},
+  author       = {Ga\"el Guennebaud and Beno\^it Jacob and others},
+  organization = {Eigen Contributors},
+  year         = {2024},
+  note         = {Accessed: 2024-11-20},
+  howpublished = {Available at \url{https://eigen.tuxfamily.org/dox/}}
+}
+
+@manual{kernel_false_sharing,
+  title        = {False Sharing in the Linux Kernel},
+  author       = {Linux Kernel Contributors},
+  year         = {2024},
+  note         = {Accessed: 2024-11-20},
+  howpublished = {Available at \url{https://www.kernel.org/doc/html/latest/core-api/false_sharing.html}}
+}
+
+@misc{openglconcepts,
+  title        = {Portal:OpenGL Concepts},
+  howpublished = {Available at \url{https://www.khronos.org/opengl/wiki/Portal:OpenGL_Concepts}},
+  journal      = {OpenGL Wiki},
+  publisher    = {Khronos Group},
+  year         = {2017},
+  month        = {Sep}
+}
+
+@book{Peddie_2022,
+  place     = {Cham, Cham},
+  title     = {The history of the GPU - eras and environment},
+  publisher = {Springer International Publishing Springer},
+  author    = {Peddie, Jon},
+  year      = {2022}
+}
+
+@misc{quake,
+  title        = {Quake Map Format - Quake Wiki},
+  howpublished = {Wiki available at \url{https://quakewiki.org/wiki/Quake_map_format}},
+  journal      = {Quake Wiki}
+} 
+
+@misc{StephanoDSA,
+  howpublished = {Available at \url{https://ktstephano.github.io/rendering/opengl/dsa}},
+  title        = {Direct State Access (DSA)},
+  journal      = {JStephano},
+  author       = {Stephano, Justin}
+} 
+
+@misc{Vries_2014,
+  title        = {Instancing},
+  howpublished = {Available at \url{https://learnopengl.com/Advanced-OpenGL/Instancing}},
+  journal      = {LearnOpenGL},
+  author       = { Vries , Joey de},
+  year         = {2014},
+  month        = {Jun}
+} 
+
+@misc{GLTF,
+  howpublished = {Available at \url{https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html}},
+  title        = {GLTF 2.0 specification},
+  publisher    = {Khronos Group},
+  author       = {The Khronos 3D Formats Working Group },
+  year         = {2021},
+  month        = {Oct}
+} 
+
+
+@article{reynolds1987flocks,
+  author     = {Reynolds, Craig W.},
+  title      = {Flocks, herds and schools: A distributed behavioral model},
+  year       = {1987},
+  issue_date = {July 1987},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {21},
+  number     = {4},
+  issn       = {0097-8930},
+  url        = {https://doi.org/10.1145/37402.37406},
+  doi        = {10.1145/37402.37406},
+  abstract   = {The aggregate motion of a flock of birds, a herd of land animals, or a school of fish is a beautiful and familiar part of the natural world. But this type of complex motion is rarely seen in computer animation. This paper explores an approach based on simulation as an alternative to scripting the paths of each bird individually. The simulated flock is an elaboration of a particle systems, with the simulated birds being the particles. The aggregate motion of the simulated flock is created by a distributed behavioral model much like that at work in a natural flock; the birds choose their own course. Each simulated bird is implemented as an independent actor that navigates according to its local perception of the dynamic environment, the laws of simulated physics that rule its motion, and a set of behaviors programmed into it by the "animator." The aggregate motion of the simulated flock is the result of the dense interaction of the relatively simple behaviors of the individual simulated birds.},
+  journal    = {SIGGRAPH Comput. Graph.},
+  month      = aug,
+  pages      = {25–34},
+  numpages   = {10}
+}
+
+@inproceedings{stam1999stable,
+  author    = {Stam, Jos},
+  title     = {Stable fluids},
+  year      = {1999},
+  isbn      = {0201485605},
+  publisher = {ACM Press/Addison-Wesley Publishing Co.},
+  address   = {USA},
+  url       = {https://doi.org/10.1145/311535.311548},
+  doi       = {10.1145/311535.311548},
+  abstract  = {Building animation tools for fluid-like motions is an important and challenging problem with many applications in computer graphics. The use of physics-based models for fluid flow can greatly assist in creating such tools. Physical models, unlike key frame or procedural based techniques, permit an animator to almost effortlessly create interesting, swirling fluid-like behaviors. Also, the interaction of flows with objects and virtual forces is handled elegantly. Until recently, it was believed that physical fluid models were too expensive to allow real-time interaction. This was largely due to the fact that previous models used unstable schemes to solve the physical equations governing a fluid. In this paper, for the first time, we propose an unconditionally stable model which still produces complex fluid-like flows. As well, our method is very easy to implement. The stability of our model allows us to take larger time steps and therefore achieve faster simulations. We have used our model in conjuction with advecting solid textures to create many fluid-like animations interactively in two- and three-dimensions.},
+  booktitle = {Proceedings of the 26th Annual Conference on Computer Graphics and Interactive Techniques},
+  pages     = {121–128},
+  numpages  = {8},
+  keywords  = {Navier-Stokes, advected textures, animation of fluids, gaseous phenomena, implicit elliptic PDE solvers, interactive modeling, stable solvers},
+  series    = {SIGGRAPH '99}
+}
+
+@misc{Vulkan2024,
+  author       = {{The Khronos Vulkan Working Group}},
+  title        = {Vulkan 1.4.303 - A Specification},
+  howpublished = {Available at \url{https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html}},
+  year         = {2024}
+}
+
+@misc{Horwitz_2018,
+  title     = {Apple defends end of OpenGL as Mac Game Developers Threaten to leave | venturebeat},
+  howpublished       = {Available at \url{https://venturebeat.com/games/apple-defends-end-of-opengl-as-mac-game-developers-threaten-to-leave/}},
+  journal   = {Apple defends end of OpenGL as Mac game developers threaten to leave},
+  publisher = {VentureBeat},
+  author    = {Horwitz, Jeremy},
+  year      = {2018},
+  month     = {Jun}
+} 
