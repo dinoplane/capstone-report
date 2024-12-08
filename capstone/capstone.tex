@@ -65,8 +65,8 @@ AlienGLRenderer: A simple 3D OpenGL renderer for simple scenes
 
 \author{Arrian Chi% <-this % stops a space
 \\
-\\ % TODO TODO
-\includegraphics[width=8.7cm]{cloth1.PNG} \> \includegraphics[width=8.7cm]{cloth2.PNG} 
+\\ 
+\includegraphics[width=8.7cm]{baka1.PNG} \> \includegraphics[width=8.7cm]{baka2.PNG} 
 }
 
 
@@ -176,7 +176,7 @@ The issue in the first version is that the we are using instancing for the numbe
 
 
 \subsection{Texture loading}
-% Textures in the \texttt{.gltf} file format are applied per primitive of a mesh. Because of the way instancing and indirect draw batch all the mesh draw calls together and the fact that OpenGL doesn't permit the user to create an array of textures (that would be way easier to implement because the fragments would select which texture they are using), the next best way to reimplement textures was to use a texture atlas. This required the model loader to calculate the size of all textures and pack them into a single texture. Additionally, some additional computation is required to recalculate the texture coordinates of each vertex on the model. I opted to do this calculation on the GPU because it was more intuitive for me (better interface to program with). But one may also recompute the same texture coords on the CPU so that this calculation is only done once. 
+Textures in the \texttt{.gltf} file format are applied per primitive of a mesh. Because of the way instancing and indirect draw batch all the mesh draw calls together and the fact that OpenGL doesn't permit the user to create an array of textures (that would be way easier to implement because the fragments would select which texture they are using), the next best way to reimplement textures was to use a texture atlas. This required the model loader to calculate the size of all textures and pack them into a single texture. Additionally, some additional computation is required to recalculate the texture coordinates of each vertex on the model. I opted to do this calculation on the GPU because it was more intuitive for me (better interface to program with). But one may also recompute the same texture coords on the CPU so that this calculation is only done once. 
 
 \subsection {Multiple Cameras and Render Targets}
 Before continuing, I should explain the architecture of the \texttt{Renderer} class itself. To begin, the \texttt{Renderer} class contains all the vertex array objects (objects that the OpenGL context use to determine the layout of the vertex stream) for each object type, the compute shaders for rendering operations (e.g. cull shaders), the uniform buffers available to every shader (e.g. camera view projection matrices) and the framebuffer textures the renderer must render onto. The renderer contains the logic to bind the appropriate data of each type of object to the OpenGL context and issue that call. The renderer also contains logic for any post-processing effects that should be applied onto the renderered image. As mentioned before, in the application mainloop, the app will blit the framebuffer textures onto the main framebuffer texture (adjacent to each other horizontally) after the render call is completed for every \texttt{Renderer} object. I am aware it may be better to have the \texttt{Renderer} specify where on the main framebuffer to write to, but I have not implemented that yet. 
@@ -256,8 +256,6 @@ Each of these bullet points are a feat on their own (I am aware having all these
 
 \section {Conclusion}
 In this report, I have discussed the design, implementation, and features of my capstone project, AlienGLRenderer. I have highlighted the issues I encountered during its development and what future work lies ahead, including expressing my desire to port this renderer to Vulkan. The project has been a valuable learning experience, allowing me to deepen my understanding of computer graphics and OpenGL. Moving forward, I aim to address the identified issues, implement additional features, and explore more advanced graphics APIs to further enhance the capabilities of AlienGLRenderer and my knowledge.
-
-\section*{APPENDIX}
 
 \onecolumn
         \begin{algorithm}[h]
